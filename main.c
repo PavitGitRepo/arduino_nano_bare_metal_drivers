@@ -1,17 +1,15 @@
 /*
- * File:        main.ino
+ * File:        main.c
  * Project:     Mosture and Earthquack Monitoring Syatem
- * Description: [Will add later
- * Author:      Pavit Bhatia
- * Date:        31/08/2-25
+ * Description: This is a small project for checking soil moisture for land slide detection and Earthquack Monitoring/warning
+ * Author:      Pavit Kumar
+ * Date:        31/08/2025
  * Last Modified: Current
  *
  * Copyright (c) 2025 PTech Innovations. All rights reserved.
- * Licensed under the 1234567890 License. See LICENSE file for details.
  *
  * Revision History:
- * [YYYY-MM-DD] [Author]: Initial creation.
- * [YYYY-MM-DD] [Author]: [Description of change].
+ * [2025-08-31] [Author]: Initial creation.
  */
 
 
@@ -27,7 +25,7 @@ LiquidCrystal_I2C lcd(0x27,  16, 2);
 void setup() {
   Serial.begin(9600);
   pinMode(buzzer, OUTPUT);
-      digitalWrite(buzzer, LOW);
+  digitalWrite(buzzer, LOW);
   init_vib();
   lcd.init();
   lcd.backlight();
